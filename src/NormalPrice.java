@@ -61,8 +61,8 @@ public class NormalPrice extends Price{
                 "\n[ \n" +
                         "  AdultPrice: RM " + adultPrice +
                         "\n  Child With Extra Bed Price: RM " + childWithExtraBedPrice +
-                        "\n  Child With No Extra Bed Price: RM" + childWithNoExtraBedPrice +
-                        "\n  Infant Price: RM" + infantPrice
+                        "\n  Child With No Extra Bed Price: RM " + childWithNoExtraBedPrice +
+                        "\n  Infant Price: RM " + infantPrice
                 ;
     }
 }
