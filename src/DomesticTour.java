@@ -36,7 +36,7 @@ public class DomesticTour extends Tour{
     public void setPrivateTours(boolean privateTours){
         this.privateTours = privateTours;
     }
-    public String getBoolean(boolean value) {
+    public String getYesOrNo(boolean value) {
         if(value){
             return "Yes";
         }
@@ -49,8 +49,8 @@ public class DomesticTour extends Tour{
     public String toString() {
         return "Domestic Tour " +
                 "\n[ State: " + state + "]" +
-                "\n[ Has Private Tour = " + getBoolean(privateTours) + "]" +
-                "\n[ Has Honeymoon Tour = " + getBoolean(honeymoonTours) + "]" +
+                "\n[ Has Private Tour = " + getYesOrNo(privateTours) + "]" +
+                "\n[ Has Honeymoon Tour = " + getYesOrNo(honeymoonTours) + "]" +
                 "\n[ Duration: " + super.getDays() + " days]" +
                 "\nNormal Price: " + super.getNormalPrice().toString() + "\n]" +
                 "\nPeak Price: " + super.getPeakPrice().toString() + "\n]"

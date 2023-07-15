@@ -23,7 +23,7 @@ public class OverseasTour extends Tour {
         return this.privateTours;
     }
 
-    public boolean isJoinedTours() {
+    public boolean getJoinedTours() {
         return joinedTours;
     }
 
@@ -39,7 +39,7 @@ public class OverseasTour extends Tour {
         this.privateTours = privateTours;
     }
 
-    public String getBoolean(boolean value) {
+    public String getYesOrNo(boolean value) {
         if(value){
             return "Yes";
         }
@@ -52,8 +52,8 @@ public class OverseasTour extends Tour {
         return "Overseas Tour " +
                 "\n[ Country: " + country + "]" +
                 "\n[ State: " + state + "]" +
-                "\n[ Has Joined Tour: " + getBoolean(joinedTours) + "]" +
-                "\n[ Has Private Tour: " + getBoolean(privateTours) + "]" +
+                "\n[ Has Joined Tour: " + getYesOrNo(joinedTours) + "]" +
+                "\n[ Has Private Tour: " + getYesOrNo(privateTours) + "]" +
                 "\n[ Duration: " + super.getDays() + " days]" +
                 "\nNormal Price: " + super.getNormalPrice().toString() + "\n]" +
                 "\nPeak Price: " + super.getPeakPrice().toString() + "\n]"
